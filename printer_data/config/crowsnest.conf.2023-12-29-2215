@@ -30,7 +30,7 @@ delete_log: false                       # Deletes log on every restart, if set t
 no_proxy: false
 
 [cam 1]
-mode: ustreamer                       # ustreamer - Provides mjpg and snapshots. (All devices)
+mode: ustreamer                         # ustreamer - Provides mjpg and snapshots. (All devices)
                                         # camera-streamer - Provides webrtc, mjpg and snapshots. (rpi + Raspi OS based only)
 enable_rtsp: false                      # If camera-streamer is used, this enables also usage of an rtsp server
 rtsp_port: 8554                         # Set different ports for each device!
@@ -39,7 +39,7 @@ device: /dev/video0                     # See Log for available ...
 #device: /base/soc/i2c0mux/i2c@1/imx708@1a
 resolution: 680x480                   # widthxheight format
 max_fps: 30                             # If Hardware Supports this it will be forced, otherwise ignored/coerced.
-#custom_flags: -pl 50hz                          # You can run the Stream Services with custom flags.
+#custom_flags:                          # You can run the Stream Services with custom flags.
 #v4l2ctl:                               # Add v4l2-ctl parameters to setup your camera, see Log what your cam is capable of.
 
 
@@ -52,6 +52,5 @@ port: 8081                              # HTTP/MJPG Stream/Snapshot Port
 device: /dev/v4l/by-id/usb-046d_0825_2C04FC60-video-index0                     # See Log for available ...
 resolution: 1920x1080                   # widthxheight format
 max_fps: 30                             # If Hardware Supports this it will be forced, otherwise ignored/coerced.
-power_line_frequency : 1
-#custom_flags: -pl 50hz -ex 300 -co 40 --gain 2                         # You can run the Stream Services with custom flags. 
+#custom_flags:                          # You can run the Stream Services with custom flags.
 #v4l2ctl:   
