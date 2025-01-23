@@ -85,13 +85,22 @@ managed_services = klipper
 [update_manager cartographer]
 type = git_repo
 path = ~/cartographer-klipper
-channel = dev
+channel = stable
 origin = https://github.com/Cartographer3D/cartographer-klipper.git
-env = ~/klippy-env/bin/python
-requirements = requirements.txt
-install_script = install.sh
 is_system_service = False
 managed_services = klipper
 info_tags = 
 	desc=Cartographer Probe
+
+[update_manager sonar]
+type = git_repo
+path = ~/sonar
+origin = https://github.com/mainsail-crew/sonar.git
+primary_branch = main
+managed_services = sonar
+install_script = tools/install.sh
+
+[spoolman]
+server = http://192.168.60.100:7912
+sync_rate = 5
 
