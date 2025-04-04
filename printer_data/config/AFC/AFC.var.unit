@@ -90,7 +90,7 @@
             "runout_lane": "NONE",
             "filament_status": "Not Ready",
             "filament_status_led": "#ff0000",
-            "status": ""
+            "status": null
         }
     },
     "system": {
@@ -100,8 +100,11 @@
         "num_extruders": 1,
         "extruders": {
             "extruder": {
-                "lane_loaded": ""
+                "lane_loaded": null
             }
+        },
+        "bypass": {
+            "enabled": false
         }
     }
 }
