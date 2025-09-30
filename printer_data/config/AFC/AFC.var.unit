@@ -52,7 +52,7 @@
             "filament_status": "Prep",
             "filament_status_led": "#ffffff",
             "status": "None",
-            "dist_hub": 110.0
+            "dist_hub": 105.0
         },
         "lane3": {
             "name": "lane3",
@@ -105,7 +105,7 @@
             "runout_lane": null,
             "filament_status": "Ready",
             "filament_status_led": "#00cc00",
-            "status": "None",
+            "status": "Loaded",
             "dist_hub": 170.0
         }
     },
