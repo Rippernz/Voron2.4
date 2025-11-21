@@ -36,7 +36,7 @@
             "buffer_status": "Advancing",
             "lane": 2,
             "map": "T1",
-            "load": true,
+            "load": false,
             "prep": true,
             "tool_loaded": false,
             "loaded_to_hub": true,
@@ -49,9 +49,9 @@
             "weight": 960.7477244104541,
             "extruder_temp": 240,
             "runout_lane": null,
-            "filament_status": "Ready",
-            "filament_status_led": "#00cc00",
-            "status": "Loaded",
+            "filament_status": "Prep",
+            "filament_status_led": "#ffffff",
+            "status": "Ejecting",
             "dist_hub": 80.0
         },
         "lane3": {
